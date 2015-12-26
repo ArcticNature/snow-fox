@@ -1,0 +1,8 @@
+[submodule "build-tools"]
+	path = build-tools
+	url = ../build-tools/
+	branch = local
+[submodule "core"]
+	path = core
+	url = ../core
+	branch = local
