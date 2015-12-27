@@ -1,8 +1,6 @@
 [submodule "build-tools"]
 	path = build-tools
-	url = ../build-tools/
-	branch = local
+	url = git@github.com:ArcticNature/build-tools.git
 [submodule "core"]
 	path = core
-	url = ../core
-	branch = local
+	url = git@github.com:ArcticNature/core.git
