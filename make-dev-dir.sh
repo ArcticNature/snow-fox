@@ -33,6 +33,7 @@ mk_build_symlink 3rd-parties
 mk_component_symlink build-tools
 mk_component_symlink core
 mk_component_symlink dependencies
+mk_component_symlink extentions
 
 
 # Install build-tools node modules.

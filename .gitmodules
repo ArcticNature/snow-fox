@@ -4,3 +4,6 @@
 [submodule "core"]
 	path = core
 	url = git@github.com:ArcticNature/core.git
+[submodule "extentions"]
+	path = extentions
+	url = git@github.com:ArcticNature/extentions.git
