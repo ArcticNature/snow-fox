@@ -11,7 +11,7 @@ DEV_DIR=${1-"snow-fox-dev"}
 mk_build_symlink() {
   name=$1
   if [ ! -h "${DEV_DIR}/$name" ]; then
-    ln -s "${ORG_DIR}/snow-fox/$name" "${DEV_DIR}/$name"
+    ln -s "${ORG_DIR}/build-tools/$name" "${DEV_DIR}/$name"
   fi
 }
 
@@ -22,12 +22,20 @@ mk_component_symlink() {
   fi
 }
 
+mk_snow_symlink() {
+  name=$1
+  if [ ! -h "${DEV_DIR}/$name" ]; then
+    ln -s "${ORG_DIR}/snow-fox/$name" "${DEV_DIR}/$name"
+  fi
+}
+
 
 # Check directory and build files.
 [ -d "${DEV_DIR}" ] || mkdir -p ${DEV_DIR}
 mk_build_symlink Gruntfile.js
 mk_build_symlink package.json
-mk_build_symlink 3rd-parties
+mk_snow_symlink .git
+mk_snow_symlink 3rd-parties
 
 # Check internal components.
 mk_component_symlink build-tools
