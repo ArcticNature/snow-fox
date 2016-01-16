@@ -7,3 +7,6 @@
 [submodule "extentions"]
 	path = extentions
 	url = git@github.com:ArcticNature/extentions.git
+[submodule "documents"]
+	path = documents
+	url = git@github.com:ArcticNature/docs.git
