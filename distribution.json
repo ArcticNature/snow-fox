@@ -1,0 +1,14 @@
+{
+  "daemon": {
+    "core.bin.daemon": "bin/snow-fox"
+  },
+
+  "options": {
+    "prefix": "snow-fox",
+    "bundle": {
+      "name": "snow-fox",
+      "shorten_version": true,
+      "version": true
+    }
+  }
+}

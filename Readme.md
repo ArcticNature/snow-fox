@@ -17,6 +17,16 @@ to reflect the changes introduced by this redesign.
 For the time being you can visit the [old documentation](http://stefano-pogliani.github.io/snow-fox-pages/).
 
 
+Building from source
+--------------------
+```bash
+git clone git@github.com:ArcticNature/snow-fox.git --recursive
+cd snow-fox
+npm install
+grunt distribute
+```
+
+
 Contributions
 -------------
 Contributions are more then welcome!!!
