@@ -1,0 +1,69 @@
+#!/bin/bash
+#  Returns the state of repositories directly below the current directory.
+
+
+# Constant.
+RED="\033[0;31m"
+GREEN="\033[0;32m"
+RESET="\033[0m"
+
+# Variables.
+MODE="sumary"
+
+
+# Parse arguments.
+while [ $# -ne 0 ]; do
+  arg=$1
+  shift
+
+  case "${arg}" in
+    --smart)   MODE="smart";;
+    --summary) MODE="summary";;
+    --verbose) MODE="verbose";;
+  esac
+done
+
+
+# Reporting modes.
+smart() {
+  repo="$1/$2"
+  cd "${repo}"
+  changed=$(git diff-index --name-only HEAD --)
+
+  if [ -n "${changed}" ]; then
+    echo "** Repository '$2' **"
+    git status
+  fi
+}
+
+sumary() {
+  repo="$1/$2"
+  cd "${repo}"
+  changed=$(git diff-index --name-only HEAD --)
+
+  echo -n "$2: "
+  if [ -z "${changed}" ]; then
+    echo -e "${GREEN}no changes${RESET}"
+  else
+    echo -e "${RED}changed${RESET}"
+  fi
+}
+
+verbose() {
+  echo "*** Entering '$2' ***"
+  repo="$1/$2"
+  cd "${repo}"
+  git status
+  echo -e "\n"
+}
+
+
+# Run commands.
+current=$(pwd)
+children=$(ls -1)
+
+for dir in ${children}; do
+  if [ -e "${current}/${dir}/.git" ]; then
+    ${MODE} "${current}" "${dir}"
+  fi
+done
