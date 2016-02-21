@@ -10,3 +10,6 @@
 [submodule "documents"]
 	path = documents
 	url = git@github.com:ArcticNature/docs.git
+[submodule "dependencies"]
+	path = dependencies
+	url = https://github.com/ArcticNature/dependencies.git
