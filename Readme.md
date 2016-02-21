@@ -49,15 +49,17 @@ This repository is the place to build SnowFox from.
 To work around the problem of changes to submodules that need to be pushed
 to origin and then pulled in the superproject we can use symlinks.
 
-Given the following directory structure, the `make-dev-dir` script sets
+Given the following directory structure, the `make-dev-dir.sh` script sets
 up everything you need to `grunt *` the project.
 
     arctic-nature/
-      build-tools -> git repo for submodule.
-      core -> git repo for submodule.
-      ...
+      build-tools -> git repo for build-tools submodule.
+      core -> git repo for core submodule.
+      dependencies -> git repo for dependencies submodule.
+      docs -> git repo for documents submodule.
+      extentions -> git repo for extentions submodule.
       snow-fox -> this git repository.
 
 From the organization directory run:
 
-    snow-fox/make-dev-dir snow-for-dev
+    snow-fox/make-dev-dir.sh snow-fox-dev

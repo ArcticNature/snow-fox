@@ -36,6 +36,7 @@ mk_build_symlink Gruntfile.js
 mk_build_symlink package.json
 mk_snow_symlink .git
 mk_snow_symlink 3rd-parties
+mk_snow_symlink distribution.json
 
 # Check internal components.
 mk_component_symlink build-tools
@@ -54,4 +55,6 @@ cd "${DEV_DIR}/build-tools"
 npm install
 
 cd ".."
-npm install
+if [ ! -h "node_modules" ]; then
+  ln -s "build-tools/node_modules" "node_modules"
+fi
