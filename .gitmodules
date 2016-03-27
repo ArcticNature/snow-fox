@@ -9,7 +9,7 @@
 	url = https://github.com/ArcticNature/extentions.git
 [submodule "documents"]
 	path = documents
-	url = https://github.com/ArcticNature/docs.git
+  url = https://github.com/ArcticNature/docs.git
 [submodule "dependencies"]
 	path = dependencies
 	url = https://github.com/ArcticNature/dependencies.git
