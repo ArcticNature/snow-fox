@@ -42,6 +42,7 @@ mk_snow_symlink distribution.json
 mk_component_symlink build-tools
 mk_component_symlink core
 mk_component_symlink dependencies
+mk_component_symlink documents
 mk_component_symlink extentions
 
 

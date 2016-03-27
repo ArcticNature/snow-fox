@@ -1,15 +1,15 @@
 [submodule "build-tools"]
 	path = build-tools
-	url = git@github.com:ArcticNature/build-tools.git
+	url = https://github.com/ArcticNature/build-tools.git
 [submodule "core"]
 	path = core
-	url = git@github.com:ArcticNature/core.git
+	url = https://github.com/ArcticNature/core.git
 [submodule "extentions"]
 	path = extentions
-	url = git@github.com:ArcticNature/extentions.git
+	url = https://github.com/ArcticNature/extentions.git
 [submodule "documents"]
 	path = documents
-	url = git@github.com:ArcticNature/docs.git
+	url = https://github.com/ArcticNature/docs.git
 [submodule "dependencies"]
 	path = dependencies
 	url = https://github.com/ArcticNature/dependencies.git

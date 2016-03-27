@@ -11,10 +11,11 @@ the new home of the project.
 
 Documentation
 -------------
-Documentation needs to be moved to the new organization and updated
-to reflect the changes introduced by this redesign.
+The documentation for SnowFox is available online at https://arcticnature.github.io/
 
-For the time being you can visit the [old documentation](http://stefano-pogliani.github.io/snow-fox-pages/).
+
+
+The documentation for the old prototype is available at https://stefano-pogliani.github.io/snow-fox-pages/
 
 
 Building from source
