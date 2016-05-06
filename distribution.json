@@ -1,5 +1,6 @@
 {
   "daemon": {
+    "core.bin.client":  "bin/snow-fox-client",
     "core.bin.daemon":  "bin/snow-fox",
     "core.bin.manager": "bin/snow-fox-manager",
     "core.bin.spawner": "bin/snow-fox-spawner"
