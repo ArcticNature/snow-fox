@@ -63,6 +63,9 @@ current=$(pwd)
 children=$(ls -1)
 
 for dir in ${children}; do
+  if [ "${dir}" == "snow-fox-dev" ]; then
+    continue
+  fi
   if [ -e "${current}/${dir}/.git" ]; then
     ${MODE} "${current}" "${dir}"
   fi

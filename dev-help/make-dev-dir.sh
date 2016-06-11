@@ -5,7 +5,7 @@
 
 
 ORG_DIR=${PWD}
-DEV_DIR=${1-"snow-fox-dev"}
+DEV_DIR=${1:-"snow-fox-dev"}
 
 
 mk_build_symlink() {
@@ -37,6 +37,7 @@ mk_build_symlink package.json
 mk_snow_symlink .git
 mk_snow_symlink 3rd-parties
 mk_snow_symlink distribution.json
+mk_snow_symlink dev-help
 
 # Check internal components.
 mk_component_symlink build-tools
