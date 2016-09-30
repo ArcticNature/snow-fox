@@ -41,6 +41,7 @@ mk_snow_symlink dev-help
 
 # Check internal components.
 mk_component_symlink build-tools
+mk_component_symlink config-example
 mk_component_symlink core
 mk_component_symlink dependencies
 mk_component_symlink documents

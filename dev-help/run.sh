@@ -3,7 +3,7 @@
 
 
 BIN="out/dist/debug/core/bin/daemon/core.bin.daemon"
-REPO="dev-help/conf"
+REPO="config-example"
 
 BASE_SOCK="/tmp/snow-fox"
 M_SOCK="${BASE_SOCK}-manager.sock"
