@@ -28,6 +28,20 @@ grunt distribute
 ```
 
 
+Running tests
+-------------
+```bash
+git clone git@github.com:ArcticNature/snow-fox.git --recursive
+cd snow-fox
+npm install
+grunt analyse
+
+# The analyse command runs the tests and generates a cobertura report.
+# Use this command to view coverage for a component.
+pycobertura show --format text out/reports/PATH_TO_COMPONENT/coverage.xml
+```
+
+
 Contributions
 -------------
 Contributions are more then welcome!!!

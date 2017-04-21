@@ -1,0 +1,9 @@
+#!/bin/bash
+# Iterate over coverage reports and prints the results.
+
+find out/ -name 'coverage.xml' | while read coverage; do
+  echo "***  ${coverage}  ***"
+  pycobertura show "${coverage}"
+  echo
+  echo
+done
