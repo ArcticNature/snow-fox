@@ -37,7 +37,7 @@ mk_build_symlink package.json
 mk_snow_symlink .git
 mk_snow_symlink 3rd-parties
 mk_snow_symlink distribution.json
-mk_snow_symlink dev-help
+mk_snow_symlink dev-tools
 
 # Check internal components.
 mk_component_symlink build-tools
